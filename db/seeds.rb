@@ -19,9 +19,6 @@ when 'test'
 
   # TODO complete test data for expert friend searcher, need lots of data.
     
-
-  end
-
 when 'production'
   # production seeds (if any) ...
 
