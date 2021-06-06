@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: backend-challenge_development
+  host: localhost
+  user: db_dev_user
+  password: db_dev_password
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
