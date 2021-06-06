@@ -3,6 +3,7 @@ require 'rails_helper'
 describe 'Members', type: :request do
   let(:body) { JSON.parse(response.body) }
   let(:headers) { { "Accept" => "application/json", 'Content-Type' => 'application/json' } }
+  let(:member) { create(:member) }
 
   describe 'creating a member' do
     subject { post '/members', params: params.to_json, headers: headers }
@@ -50,7 +51,7 @@ describe 'Members', type: :request do
 
   describe 'viewing a member' do
     context 'when member exists' do
-      subject { get "/members/#{Member.first.id}", headers: headers }
+      subject { get "/members/#{member.id}", headers: headers }
 
       it 'returns the correct status code' do
         subject
