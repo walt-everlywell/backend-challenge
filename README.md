@@ -62,6 +62,17 @@ We encourage the use of any libraries for everything except the search functiona
          [GET] "/members"
          [GET] "/members/:member_id"
 
+## Dev Comments and TODOs
+
+1. Look at/handle two direction friend records in the friendship table
+1. App is congifured for Rails 5 API
+1. URL shortner should be a background process after member creation
+1. Remove un-needed routes and controller actions
+1. Need to complete the test cases for the expert search
+1. Optimize DB queries to accomodate more frieds. i.e. "find_each" using batches possibly, could be an issue with overlaps.
+
+
+
 ## Reviewer Setup
 
 1. Clone the candidate's branch
@@ -74,3 +85,4 @@ We encourage the use of any libraries for everything except the search functiona
         
 1. [Make a copy](https://docs.google.com/spreadsheets/u/0/d/1t6aY1dpVv4jEG1Xq2x5DHkQrXNsMrJfn_fhdSZM6C_8/copy) of the rubric and fill it in
 1. Ensure that the requests specs are the same or improved
+
